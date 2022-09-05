@@ -41,7 +41,7 @@ driver.find_element(By.CLASS_NAME, 'am-button').click()
 #driver.find_element_by_class_name("am-button").click()
 
 time.sleep(1)
-driver.find_element(By.CLASS_NAME, 'textArea').send_keys("吃饭")
+driver.find_element(By.CLASS_NAME, 'textArea').send_keys("出校")
 #driver.find_element_by_class_name("textArea").send_keys("吃饭")
 
 time.sleep(1)
