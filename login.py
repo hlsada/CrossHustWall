@@ -36,7 +36,7 @@ try:
 except Exception:
     print ("gg")
 
-
+print (driver.title)
 time.sleep(5)
 driver.find_element(By.XPATH, "/div/div[2]/div/div/div/div/div/a").click()
 #driver.find_element_by_class_name("am-button").click()
