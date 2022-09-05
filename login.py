@@ -33,10 +33,10 @@ driver = webdriver.Chrome(options=options)
 # driver = webdriver.Chrome()
 try:
     driver.get(ticket)
+    print (driver.title)
 except Exception:
     print ("gg")
-
-print (driver.title)
+    
 time.sleep(5)
 driver.find_element(By.XPATH, "/div/div[2]/div/div/div/div/div/a").click()
 #driver.find_element_by_class_name("am-button").click()
