@@ -51,7 +51,7 @@ time.sleep(5)
 driver.find_element(By.CLASS_NAME, 'submitbtn').click()
 #driver.find_element_by_class_name("submitbtn").click()
 
-time.sleep(5)
+time.sleep(5) 
 print (driver.title)
 
 
