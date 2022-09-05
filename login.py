@@ -37,8 +37,8 @@ except Exception:
 
 
 time.sleep(5)
-driver.find_element(By.CLASS_NAME, 'am-button-primary').click()
-#driver.find_element_by_class_name("am-button").click()
+#driver.find_element(By.CLASS_NAME, 'am-button-primary').click()
+driver.find_element_by_class_name("am-button").click()
 
 time.sleep(5)
 driver.find_element(By.CLASS_NAME, 'textArea').send_keys("吃饭")
