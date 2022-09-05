@@ -35,10 +35,11 @@ try:
     driver.get(ticket)
     
 except Exception:
-    print(os.environ['USERNAME'],os.environ['PASSWORD'])
-    print (driver.title+"123")
     print ("gg")
+
     
+print(os.environ['USERNAME'],os.environ['PASSWORD'])
+print (driver.title+"123")
 time.sleep(5)
 driver.find_element(By.XPATH, "/div/div[2]/div/div/div/div/div/a").click()
 #driver.find_element_by_class_name("am-button").click()
