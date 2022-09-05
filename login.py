@@ -35,7 +35,8 @@ try:
     driver.get(ticket)
     
 except Exception:
-    print (driver.title)
+    print(os.environ['USERNAME'],os.environ['PASSWORD'])
+    print (driver.title+"123")
     print ("gg")
     
 time.sleep(5)
