@@ -38,7 +38,7 @@ except Exception:
 
 
 time.sleep(5)
-driver.find_element(By.NAME, '同意').click()
+driver.find_element(By.NAME, '同 意').click()
 #driver.find_element_by_class_name("am-button").click()
 
 time.sleep(5)
