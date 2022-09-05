@@ -38,7 +38,7 @@ except Exception:
 
 
 time.sleep(5)
-driver.find_element(By.NAME, '同 意').click()
+driver.find_element(By.XPATH, "//*[@id="am-modal-container-1662355842265"]/div/div[2]/div/div/div/div/div/a").click()
 #driver.find_element_by_class_name("am-button").click()
 
 time.sleep(5)
