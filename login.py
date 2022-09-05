@@ -33,8 +33,9 @@ driver = webdriver.Chrome(options=options)
 # driver = webdriver.Chrome()
 try:
     driver.get(ticket)
-    print (driver.title)
+    
 except Exception:
+    print (driver.title)
     print ("gg")
     
 time.sleep(5)
