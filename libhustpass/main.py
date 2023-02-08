@@ -60,7 +60,7 @@ def doLogin(username, password, url):
     login_html = r.get(url)
     captcha_content = r.get("https://pass.hust.edu.cn/cas/code?"+str(random.random()), stream=True)
     captcha_content.raw.decode_content = True
-    print(login_html.text)
+    print(login_html.content.decode(‘utf-8’))
     time.sleep(20)
     nonce = re.search(
         '<input type="hidden" id="lt" name="lt" value="(.*)">', login_html.text
