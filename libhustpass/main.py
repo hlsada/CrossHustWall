@@ -62,7 +62,7 @@ def doLogin(username, password, url):
     captcha_content.raw.decode_content = True
     time.sleep(20)
     nonce = re.search(
-        '<input type="hidden" id="lt" name="lt" value="(.*)" />', login_html.text
+        '<input type="hidden" id="lt" name="lt" value="(.*)">', login_html.text
     ).group(1)
     action = re.search(
         '<form id="loginForm" action="(.*)" method="post">', login_html.text
