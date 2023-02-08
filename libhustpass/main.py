@@ -3,6 +3,7 @@ import libhustpass.captcha as FuckCaptcha
 import requests
 import re
 import random
+import time
 
 requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS += ':HIGH:!DH:!aNULL'
 requests.packages.urllib3.disable_warnings()
